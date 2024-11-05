@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="about.css"></head>
+<body>
+<nav>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+ <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="About.html"><i class="fa fa-fw fa-address-card"></i> About</a>
+  <a href="fooditems.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Food Menu</a>
+  <a href="book.html"> <img class="book_image" src="table.png"> Book Now</a>
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+<div class="navigation container">
+<div class="logo_container">
+<img src="logo.png" class="logo">
+</div>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+</div>
+</div>
+</nav>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "10px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div id="about">
+<div id="about_row">
+<div class="about_col">
+<h1>About Us<h1>
+<p>
+For contemporary Indian fine dining.
+A food for people who enjoy haute cuisine
+and fine drinks in safe and romantic indoor-outdoors
+setting !
+Where the Qutab Minar touches the sky
+There stands a quiant place callled Haveli
+far fromn the crowd, tucked away Nestled
+in what they call the kila An icon of modernity and style 
+Fine dining with Indian cuisine with a natural atmosphere thar makes You
+smile 
+</p>
+</div>
+<div class="about_col">
+<div id="about_img">
+<img src="aboutimg.png">
+</div>
+</div>
+</div>
+</div>
+<div class="heading">
+<h1 align="center">Our Golden Chefs</h1>
+</div>
+<div class="chef_container"> 
+<div class="card">
+<img class="chef1"src="chef1.png" alt="chef_1">
+<div class="intro">
+<h1>Mr.Mark</h1>
+<p>
+15 year experience <br>
+expert in making Indian food 
+</p>
+</div>
+</div>
+<div class="card">
+<img class="chef"src="chef2.png" alt="chef_2">
+<div class="intro">
+<h1>Mr.Jon </h1>
+<p>
+17 year experience <br>
+expert in making Japanese food 
+</p>
+</div>
+</div>
+<div class="card">
+<img class="chef"src="chef3.png" alt="chef_3">
+<div class="intro">
+<h1>Mr. raju</h1>
+<p>
+18 year experience <br>
+expert in making Chinese food 
+</p>
+</div>
+</div>
+</div>
+</div>
+   <footer>
+   <div class="footer_container"
+   <div class="footer_logo">
+   <img class="footer_img" src="logo.png" alt="logo">
+   </div>
+   <div class="link_lists">
+   <h3>Main Links</h3>
+   <ul>
+   <li>Order tracking</Li>
+   <li>New Order</li>
+   <li>Contact Us</li>
+   <li>News & blogs</li>
+   </ul>
+   </div>
+   <div class="link_lists">
+   <h3>Support</h3>
+   <ul>
+   <li>About Us</Li>
+   <li>Privacy Policy</li>
+   <li>Terms and Conditions</li>
+   </ul>
+   </div>
+   
+   <div class="news_letter">
+   <h3>Join Our Newsletter</h3>
+   <input type="email" placeholder="Enter Your Email...">
+   <h3>Follow Us</h3>
+   <div class="icon_container">
+     <div class="icon">
+   <i class="fa fa-facebook"></i>
+   </div>
+   <div class="icon">
+   <i class="fa fa-twitter"></i>
+   </div>
+    <div class="icon">  
+   <i class="fa fa-instagram"></i>
+   </div>
+    <div class="icon">  
+   <i class="fa fa-youtube"></i>
+   </div>
+   </div>
+   </div>
+   </div>
+</footer>
+</body>
+</html>

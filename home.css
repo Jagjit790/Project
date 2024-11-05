@@ -1,0 +1,275 @@
+
+body {
+  font-family: "Lato", sans-serif;
+  background: url(Background.jpg);
+}
+nav{
+	height: 65px;
+box-shadow: 5px 5px 5px rgba(1,1,1,0.05);
+position: sticky;
+top: 0;
+margin-bottom: 32px;
+background: #fff;
+z-index: 50;
+ 	
+}
+.logo {
+	height: 80px;
+	width: 80px;
+	
+}
+.navigation 
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar .book_image{
+	height: 20px;
+	width: 20px;
+	
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+	margin-top: -15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: gray;
+}
+
+#sidebar {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.hero{
+	display: flex;
+	gap: 100px;
+	justify-content: center;
+	align-items: center;
+	
+}
+.hero-content{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.tag{
+	background-color: #149f39;
+    padding: 5px 10px;
+	color: white;
+	align-self: flex-start;
+}
+.hero-content h1{
+	font-size: 72px;
+	line-height: 1.2;
+	font-weight: 400;
+}
+button{
+	padding: 10px 15px;
+	border: none;
+	transition: 0.2s ease-in-out;
+}
+button:hover{
+	opacity: 0.8;
+		transition: 0.2s ease-in-out;
+}
+.explore-btn{
+	background: #ffc066;
+	align-self: flex-start;
+}
+.features{
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.feature{
+	display: flex;
+	gap: 20px;
+    padding: 20px;
+	transition: 0.2s ease-in-out;
+}
+.feature img{
+	width: 72px;
+}
+.feature:hover{
+	transition: 0.2s ease-in-out;
+	box-shadow: 5px 5px 5px rgba(1,1,1,0.05);
+}
+.divider  {
+	border: 1px #808080;
+	margin: 20px 0;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	margin: 50px 0;
+	align-items: center;
+	}
+.menu .tag {
+	align-self: center;
+}
+.grid_image{
+	border-radius: 10px;
+	transition: 0.2s ease-in-out;
+	height: 100%;
+	width: 100%;
+}
+.grid_image:hover{
+	transform: scale(1.05);
+	transition: 0.2s ease-in-out;
+}
+.grid {
+	display: grid;
+	gap: 9px;
+	grid-template-areas: "I1 I1 I2 I3"
+	                     "I1 I1 I2 I7"
+						 "I4 I5 I6 I7";
+}
+.item1{
+	grid-area: I1;
+}
+.item2{
+	grid-area: I2;
+}
+.item3{
+	grid-area: I3;
+}
+.item4{
+	grid-area: I4;
+}
+.item5{
+	grid-area: I5; 	
+}
+.item6{
+	grid-area: I6;
+}	
+.item7{
+	grid-area: I7;
+}
+footer{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background: #eeeeee;
+}
+
+.footer_img{
+	height: 80px;
+	width: 80px;
+}
+.link_lists h3{
+	margin-bottom: 10px;
+	color: gray;
+}
+.link_lists ul{
+     list-style: none;
+}
+.link_lists ul li{
+     font-size: 16px;
+	 margin-bottom: 5px;
+}
+.news_letter h3{
+	margin-bottom: 10px;
+	color: gray;
+}
+.news_letter input{
+	padding: 5px 40px;
+	margin-bottom: 10px;
+}
+.icon_container{
+	display: flex;
+	gap: 15px;
+	font-size: 32px;
+}
+
+
+@media (max-width: 786px) {
+	.hero{  
+	flex-direction: column;
+	}
+	.hero-image{
+		display: flex;
+		justify-content: center;
+		
+	}
+	
+	.hero-image img{
+		width: 80%;
+	}
+	hero-content {
+		gap: 10px;
+		padding: 10px;
+	
+	}
+	
+	.hero-content h1{
+		font-size: 32px;
+	}
+    .features{
+		flex-direction: column;
+	}
+	.feature{
+		flex-direction: column;
+	}
+	.grid{
+		padding: 10px;
+	}
+	.grid-image{
+	border-radius: 0px;
+	}
+	footer{
+		flex-direction: column;
+	}
+	

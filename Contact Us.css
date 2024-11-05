@@ -1,0 +1,229 @@
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #FFDAB9;
+}
+nav{
+	height: 65px;
+box-shadow: 5px 5px 5px rgba(1,1,1,0.05);
+position: sticky;
+top: 0;
+margin-bottom: 32px;
+background: #FBD5AB;
+z-index: 50;
+ 	
+}
+.logo {
+	height: 80px;
+	width: 80px;
+	
+}
+.navigation 
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar .book_image{
+	height: 20px;
+	width: 20px;
+	
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+	margin-top: -15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: gray;
+}
+
+#sidebar {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url(sandwich.png);
+	background-size: cover;
+}
+.contact .content{
+	max-width: 800px;
+	text-align: center;
+}
+.contact .content h1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	font-size: 55px;
+}
+.contact .content  h1 span{
+	color: #00bcd4;
+	margin-right: 15px;
+	font-family: "mv boli";
+	font-size: 55px;
+}
+.contact_container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.contactInfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+.contactInfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+}
+.text h3{
+	font-weight: 500;
+	color: #00bcd4;
+}
+.contentForm{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+.contentForm inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.inputBox input, 
+.inputBox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.inputBox span {
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.inputBox input[type="submit"]{
+width: 100px;
+background: #00bcd4;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+}
+footer{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_img{
+	height: 80px;
+	width: 80px;
+}
+.link_lists h3{
+	margin-bottom: 10px;
+	color: gray;
+}
+.link_lists ul{
+     list-style: none;
+}
+.link_lists ul li{
+     font-size: 16px;
+	 margin-bottom: 5px;
+}
+.news_letter h3{
+	margin-bottom: 10px;
+	color: gray;
+}
+.news_letter input{
+	padding: 5px 40px;
+	margin-bottom: 10px;
+}
+.icon_container{
+	display: flex;
+	gap: 15px;
+	font-size: 32px;
+}

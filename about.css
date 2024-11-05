@@ -1,0 +1,241 @@
+*{
+margin: 0px;
+padding: 0px;
+font-family: sans-seriff;
+}
+body{
+    background: url(Background.jpg);
+}
+nav{
+	height: 65px;
+box-shadow: 5px 5px 5px rgba(1,1,1,0.05);
+position: sticky;
+top: 0;
+margin-bottom: 32px;
+background: #fff;
+z-index: 50;
+ 	
+}
+.logo {
+	height: 80px;
+	width: 80px;
+	
+}
+.navigation 
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar .book_image{
+	height: 20px;
+	width: 20px;
+	
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+	margin-top: -15px;
+  font-size: 20px;
+  cursor: pointer;
+  
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: gray;
+}
+
+#sidebar {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+#about{
+	padding: 25px 0 25px 0;
+}
+#about_row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 100px 0 100px;
+}
+.about_col{
+	flex: 1;
+}
+#about_img{
+	padding: 0 100px 0 100px;
+}
+.about_col h1{
+	text-align: center;
+	color: orange;
+}
+.about_col p{
+	text-align: left;
+	font-weight: 300;
+	font-size: 16px;
+	color: #fff;
+}
+.heading h1{
+	color: orange;
+}
+.chef_container{
+	display: flex;
+}
+.card{
+	height: 500px;
+	width: 420px;
+	margin: 50px;
+	box-shadow: 5px 5px 20px black;
+	overflow: hidden;
+	background: whitesmoke;
+	border-radius: 10px;
+	z-index: 1;
+}
+.chef1{
+margin-left: 0px;
+height: 500px;
+width: 340px;
+}
+.chef{
+height: 500px;
+width: 420px;	
+}
+.intro{
+	height: 70px;
+	width: 405px;
+	padding: 6px;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: -473px;
+	background: rgb(27, 27, 27, 0.5);
+	border-radius: 10px;
+	color: white;
+	transition:  .5s;
+	
+}
+.intro h1{
+	margin: 10px;
+	font-size: 40px;
+	color: orange;
+}
+.intro p{
+	margin: 20px;
+	font-size: 20px;
+	visibility: hidden;
+	opacity: 0;
+}
+.card:hover {
+	cursor: pointer;
+}
+.card:hover .intro{
+	height: 220px;
+	background: black;
+}
+.card:hover .intro p{
+	opacity: 1;
+	visibility: visible;
+}
+
+footer{
+	background: #FBD5AB;
+	display: flex;
+	justify-content: space-between;
+}
+.footer_img{
+	height: 80px;
+	width: 80px;
+}
+.link_lists h3{
+	margin-bottom: 10px;
+	color: gray;
+}
+.link_lists ul{
+     list-style: none;
+}
+.link_lists ul li{
+     font-size: 16px;
+	 margin-bottom: 5px;
+}
+.news_letter h3{
+	margin-bottom: 10px;
+	color: gray;
+}
+.news_letter input{
+	padding: 5px 40px;
+	margin-bottom: 10px;
+}
+.icon_container{
+	display: flex;
+	gap: 15px;
+	font-size: 32px;
+}
+
+@media (max-width: 786px) {
+	#about_row{
+		padding: 0 10px 0 10px;
+	}
+	.intro_OS p {
+		padding: 0 10px 0 10px;
+	}
+	footer{
+		flex-direction: column;
+		align-items: left;
+		justify-content: left;
+	}
+	.footer_img{
+		visibility: hidden;
+		opacity: 0;
+	}
+	.chef_container {
+		flex-direction: column;
+	}
+    .intro{
+	      visibility: hidden;
+	       opacity: 0;
+          }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="book.css"></head>
+<body>
+<nav>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+ <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="About.html"><i class="fa fa-fw fa-address-card"></i> About</a>
+  <a href="fooditems.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Food Menu</a>
+    <a href="book.html"> <img class="book_image" src="table.png"> Book Now</a>
+  <a href="Contact Us.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+<div class="navigation container">
+<div class="logo_container">
+<img src="logo.png" class="logo">
+</div>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ </button>  
+</div>
+</div>
+</nav>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "10px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div class="order"> 
+<h1><span>Book</span> a table</h1>
+<div class="order_main">
+<div class="order_image">
+<img src="order_image.png" alt="">
+</div>
+<form action="#">
+<div class="input">
+<p>Name</p>
+<input type="text" placeholder="Your Name">
+</div>
+
+<div class="input">
+<p>Email</p>
+<input type="email" placeholder="Your Email">
+</div>
+
+<div class="input">
+<p>Contact</p>
+<input placeholder="Your Mobile Number">
+</div>
+
+<div class="input">
+<p>How Many</p>
+<input type="text" placeholder="Number of person">
+</div>
+
+<div class="input">
+<p>Time</p>
+<input type="time" placeholder="time">
+</div>
+
+<div class="input">
+<p>Address</p>
+<input type="text" placeholder="Your Address">
+</div>
+<a href="#" class="book_btn"> Book Now </a>
+
+</form>
+
+</div>
+</div>
+
+<footer>
+<div class="footer_main">
+<div class="footer_tag">
+<h2>Location</h2>
+<p>Sri Lanka</p>
+<p>USA</p>
+<p>India</p>
+<p>Japan</p>
+<p>Italy</p>
+</div>
+<div class="footer_tag">
+<h2>Quick Link</h2>
+<p>Home</p>
+<p>About</p>
+<p>Menu</p>
+<p>Gallary</p>
+<p>Order</p>
+</div>
+<div class="footer_tag">
+<h2>Contact</h2>
+<p>+94 12 3456 789</p>
+<p>+94 25 5568456</p>
+<p>johndeo123@gmail.com</p>
+<p>foodshop123@gmail.com</p>
+</div>
+<div class="footer_tag">
+<h2>Our Service</h2>
+<p>Fast Delivery</p>
+<p>Easy Payments</p>
+<p>24 x 7 Service</p>
+</div>
+<div class="footer_tag">
+<h2>Follows</h2>
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+ <i class="fa fa-instagram"></i>
+<i class="fa fa-youtube"></i>
+</div>
+</div>
+ </footer>
+  
+ 
+</body>
+</html>
