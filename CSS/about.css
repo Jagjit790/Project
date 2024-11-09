@@ -1,0 +1,269 @@
+*
+{
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        transition-duration: all 0.2s;
+}
+body {
+    
+    font-family: "Lato", sans-serif;
+    background-color: #fff;
+}
+
+/*header styling start*/
+.header
+{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background:  #fff;
+    z-index: 1;
+    
+}
+.header .logo
+{
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+.header .logo span{
+    color: #719a0a;
+}
+.header .logo i {
+    color: black;
+}
+.header .navbar a 
+{
+    font-size: 1.5rem; 
+    margin: 0 1rem;  
+    color: #000;
+}
+.header .navbar a:hover
+{
+    color: #ffc066;
+
+
+}
+/* menu for smaller screens */
+.icons div
+{
+    display: none;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    border-radius: 100%;
+    background-color: #eee;
+    margin-right: .3rem;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.icons div:hover{
+    background: #149f39;
+    color: white;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover{
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+/* menu for smaller screens */
+/*header styling ends*/
+
+
+/* about */
+.about{
+    overflow: hidden;
+}
+.about h1{
+    color: #ffc066;
+    text-align: center;
+}
+.about h1 span{
+    color: #719a0a;
+}
+.about .content{
+    margin: 1rem 10%;
+    display: flex;
+    align-items: center;
+}
+.about .image{
+    height: 450px;
+    width: 450px;
+}
+/* team */
+.team h1 {
+    text-align: center;
+    color: #ffc066;
+}
+.team h1 span{
+    color: #719a0a;
+
+}
+.Box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+.Box-container .box{
+    height: 500px;
+    width: 400px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    margin: 20px 15px;
+}
+.Box-container .box img{
+    height: 100%;
+    width: 100%;
+}
+
+.Box-container .box .info{
+    text-align: center;
+    background: #fff;
+    position: relative;
+    bottom: 40px;
+    transition-duration: .5s;
+}
+.Box-container .box:hover .info{
+    bottom: 128px;
+}
+.Box-container .box .info .title{
+    padding: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+.Box-container .box .info .post{
+    font-size: 15px;
+    color: #999;
+}
+.Box-container .box .info .share{
+    margin-top: 10px;
+    border-top: 1px solid #4444;
+}
+.Box-container .box .info .share a{
+    font-size: 20px;
+    margin: 20px 10px;
+    text-decoration: none;
+    color: #333;
+}
+.Box-container .box .info .share a:hover{
+    color: #999;
+}
+/* team */
+/* footer */
+footer{
+    padding: 30px 0 0 20px;
+    background: #eeeeee;
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: #fac031;
+}
+
+/* footer */
+
+/* media queries */
+
+@media (max-width: 786px) {
+    .header .logo{
+        font-size: 1rem;
+    }
+    .header .navbar a 
+    { 
+    display: none; 
+    
+    }
+    .icons div
+    {
+        display: block;
+
+    }
+
+    .about img{
+        height: 250px;
+        width: 250px;
+    }
+    .about .content{
+        display: block;
+    }
+    footer .footer_main{
+        display: block;
+    }
+
+}
+
+
+
+
+
