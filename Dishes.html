@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./CSS/dish.css">
+</head>
+<body>
+<!--Header section starts-->
+<header class="header">
+    <a href="#" class="logo" style="color: #ffc066;"><i class="fa fa-cutlery" aria-hidden="true"></i> Tasty <span>Eats</span></a>
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#dishes">Dishes</a>
+        <a href="about.html">About</a>
+        <a href="Menu.html">Menu</a>
+        <a href="order.html">Order</a>
+    </nav>
+    <!--For smaller screens menu -->
+    <div id="myNav" class="overlay">
+     <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+     <div class="overlay-content">
+       <a href="index.html">Home</a>
+       <a href="#dishes">Dishes</a>
+       <a href="about.html">About</a>
+       <a href="Menu.html">Menu</a>
+       <a href="order.html">Order</a>
+     </div>
+   </div>
+    <div class="icons">
+        <div class="fa fa-bars" id="menu-btn" onclick="openNav()"></div>
+    </div>
+  </header>
+  <!--small screen menu-->
+  <!--header section ends-->
+<div class="dishes" id="dishes">
+    <h3 class="sub-heading">Our Dishes</h3>
+    <h1 class="heading">Popular Dishes</h3>
+    
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-eye"></i></a>
+                </div>
+                <img src="./Images/Dish1.jpg" alt="dish1" height="450px" width="450px">
+                <h3>Burger</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="order">
+                <span>$15.00</span>
+                <a href="order.html" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="heart"> <i class="fa fa-heart"></i></a>
+                <a href="#" class="eye"> <i class="fa fa-eye"></i></a>
+                <img src="./Images/dish2.jpg" alt="dish2">
+                <h3>Noodles</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="order">
+                <span>$15.00</span>
+                <a href="order.html" class="btn">Order Now</a>
+            </div>
+            </div>
+            <div class="box">
+                <a href="#" class="heart"><i class="fa fa-heart"></i></a>
+                <a href="#" class="eye"> <i class="fa fa-eye"></i></a>
+                <img src="./Images/dish3.jpg" alt="dish3">
+                <h3>Pizza</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="order">
+                <span>$15.00</span>
+                <a href="./Images/order.html" class="btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-eye"></i></a>
+                </div>
+                <img src="./Images/Dish4.jpg" alt="dish4" height="450px" width="450px">
+                <h3>Pancake</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="order">
+                <span>$15.00</span>
+                <a href="order.html" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="heart"> <i class="fa fa-heart"></i></a>
+                <a href="#" class="eye"> <i class="fa fa-eye"></i></a>
+                <img src="./Images/dish5.jpg" alt="dish5">
+                <h3>Pani Puri</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="order">
+                <span>$15.00</span>
+                <a href="order.html" class="btn">Order Now</a>
+            </div>
+            </div>
+            <div class="box">
+                <a href="#" class="heart"><i class="fa fa-heart"></i></a>
+                <a href="#" class="eye"> <i class="fa fa-eye"></i></a>
+                <img src="./Images/dish6.jpg" alt="dish6">
+                <h3>French Fries</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <div class="order">
+                <span>$15.00</span>
+                <a href="order.html" class="btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+  <!--footer-->
+  <footer>
+    <div class="footer_main">
+    <div class="footer_tag">
+    <h2>Location</h2>
+    <p>Sri Lanka</p>
+    <p>USA</p>
+    <p>India</p>
+    <p>Japan</p>
+    <p>Italy</p>
+    </div>
+    <div class="footer_tag">
+    <h2>Quick Link</h2>
+    <p>Home</p>
+    <p>Dishes</p>
+    <p>About</p>
+    <p>Menu</p>
+    <p>Order</p>
+    </div>
+    <div class="footer_tag">
+    <h2>Contact</h2>
+    <p>+94 12 3456 789</p>
+    <p>+94 25 5568456</p>
+    </div>
+    <div class="footer_tag">
+    <h2>Our Service</h2>
+    <p>Fast Delivery</p>
+    <p>Easy Payments</p>
+    <p>24 x 7 Service</p>
+    </div>
+    <div class="footer_tag">
+    <h2>Follows</h2>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+     <i class="fa fa-instagram"></i>
+    <i class="fa fa-youtube"></i>
+    </div>
+    </div>
+     </footer>
+  <!--Footer-->
+
+</div>
+<script>
+    //responsive menu
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+</script>
+</body>
+</html>

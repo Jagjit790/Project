@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./CSS/about.css">
+</head>
+<body>
+<!--Header section starts-->
+<header class="header">
+    <a href="#" class="logo" style="color: #ffc066;"><i class="fa fa-cutlery" aria-hidden="true"></i> Tasty <span>Eats</span></a>
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="Dishes.html">Dishes</a>
+        <a href="#about">About</a>
+        <a href="Menu.html">Menu</a>
+        <a href="order.html">Order</a>
+    </nav>
+    <!--For smaller screens menu -->
+    <div id="myNav" class="overlay">
+     <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+     <div class="overlay-content">
+       <a href="index.html">Home</a>
+       <a href="Dishes.html">Dishes</a>
+       <a href="#">About</a>
+       <a href="Menu.html">Menu</a>
+       <a href="order.html">Order</a>
+     </div>
+   </div>
+    <div class="icons">
+        <div class="fa fa-bars" id="menu-btn" onclick="openNav()"></div>
+    </div>
+  </header>
+  <!--small screen menu-->
+  <!--header section ends-->
+  <!-- about starts -->
+  <div class="about">
+    <h1>About <span>Us</span></h1>
+    <div class="content">
+      <div>
+      <p>
+        For contemporary Indian fine dining.
+        A food for people who enjoy haute cuisine
+        and fine drinks in safe and romantic indoor-outdoors
+        setting !
+        Where the Qutab Minar touches the sky
+        There stands a quiant place callled Haveli
+        far fromn the crowd, tucked away Nestled
+        in what they call the kila An icon of modernity and style 
+        Fine dining with Indian cuisine with a natural atmosphere thar makes You
+        smile 
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="./Images/aboutimg.png" alt="" >
+    </div>
+    </div>
+</div>
+  <!--about ends-->
+  <!--Our team-->
+<div class="team">
+    <h1 class="heading">Our <span>Chefs</span></h3>
+
+<div class="Box-container">
+  <div class="box">
+    <img src="./Images/chef1.png" alt="">
+    <div class="info">
+      <h3 class="title">Mr.Dev Malik</h3>
+      <span class="post">Expert in Dessert Cuisine</span>
+      <div class="share">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="box">
+    <img src="./Images/chef2.png" alt="">
+    <div class="info">
+      <h3 class="title">Mr.Aditya Rao</h3>
+      <span class="post">Expert in Indian Cuisine</span>
+      <div class="share">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <img src="./Images/chef3.png" alt="">
+    <div class="info">
+      <h3 class="title">Mr.Aarav Kapoor</h3>
+      <span class="post">Expert in Italian Cuisine</span>
+      <div class="share">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <!--Our Team-->
+  <!--About Ends-->
+  <!--footer-->
+  <footer>
+    <div class="footer_main">
+    <div class="footer_tag">
+    <h2>Location</h2>
+    <p>Sri Lanka</p>
+    <p>USA</p>
+    <p>India</p>
+    <p>Japan</p>
+    <p>Italy</p>
+    </div>
+    <div class="footer_tag">
+    <h2>Quick Link</h2>
+    <p>Home</p>
+    <p>Dishes</p>
+    <p>About</p>
+    <p>Menu</p>
+    <p>Order</p>
+    </div>
+    <div class="footer_tag">
+    <h2>Contact</h2>
+    <p>+94 12 3456 789</p>
+    <p>+94 25 5568456</p>
+    </div>
+    <div class="footer_tag">
+    <h2>Our Service</h2>
+    <p>Fast Delivery</p>
+    <p>Easy Payments</p>
+    <p>24 x 7 Service</p>
+    </div>
+    <div class="footer_tag">
+    <h2>Follows</h2>
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+     <i class="fa fa-instagram"></i>
+    <i class="fa fa-youtube"></i>
+    </div>
+    </div>
+     </footer>
+  <!--Footer-->
+  <script>
+    //responsive menu
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+
+  </script> 
+</body>
+</html>
