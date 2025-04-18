@@ -1,20 +1,20 @@
-*
-{
-        margin: 0;
-        padding: 0;
-        outline: none;
-        border: none;
-        text-decoration: none;
-        transition-duration: all 0.2s;
-}
-body {
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+  
+  body {
     font-family: "Lato", sans-serif;
-    background-color: ;
-}
-/*header styling start*/
-.header
-{
+    background-color: #fff;
+  }
+  
+  /* Header */
+  .header {
     box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
     position: sticky;
     top: 0;
@@ -23,67 +23,56 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
-    background:  #fff;
-    z-index: 1;
-    
-}
-.header .logo
-{
+    padding: 1rem 5%;
+    background: #fff;
+    z-index: 10;
+  }
+  .header .logo {
     font-size: 2rem;
     font-weight: bolder;
-
-}
-.header .logo span{
+  }
+  .header .logo span {
     color: #719a0a;
-}
-.header .logo i {
+  }
+  .header .logo i {
     color: black;
-}
-.header .navbar a 
-{
-    font-size: 1.5rem; 
-    margin: 0 1rem;  
+  }
+  .header .navbar a {
+    font-size: 1.2rem;
+    margin: 0 1rem;
     color: #000;
-}
-.header .navbar a:hover
-{
+  }
+  .header .navbar a:hover {
     color: #ffc066;
-
-
-}
-/* menu for smaller screens */
-.icons div
-{
+  }
+  .icons div {
     display: none;
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    border-radius: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
     background-color: #eee;
-    margin-right: .3rem;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     cursor: pointer;
-    
-}
-.icons div:hover{
+  }
+  .icons div:hover {
     background: #149f39;
     color: white;
-}
-.overlay {
+  }
+  
+  /* Overlay Menu */
+  .overlay {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     transition: 0.5s;
   }
-  
   .overlay-content {
     position: relative;
     top: 25%;
@@ -91,143 +80,136 @@ body {
     text-align: center;
     margin-top: 30px;
   }
-  
   .overlay a {
     padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
+    font-size: 30px;
     color: #818181;
     display: block;
     transition: 0.3s;
   }
-  
-  .overlay a:hover{
+  .overlay a:hover {
     color: #f1f1f1;
   }
-  
   .overlay .closebtn {
     position: absolute;
     top: 20px;
-    right: 45px;
-    font-size: 60px;
+    right: 35px;
+    font-size: 50px;
   }
-/* menu for smaller screens */
-/*header styling ends*/
-/* order styling */
-.order{
+  
+  /* Order Section */
+  .order {
     width: 100%;
-    height: 100vh;
-    padding: 70px 0;	
-}
-    .order h1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #000;
-        font-size: 55px;
-    }
-    .order h1 span{
-        color: #fac031;
-        margin-right: 15px;
-        font-family: "mv boli";
-        font-size: 55px;
-    }
-    .order .order_main{
-        
-        display: flex;
-        align-items: center;
-        gap: 5rem;
-    }
-    .order .order_main .order_image img {
-        width: 600px;	
-        height: 600px;
-    }
-    
-    .order .order_main form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0 10px;
-    }
-    .order .order_main form .input p{
-        line-height: 25px;	
-    }
-    .order .order_main form .input {
-        margin: 5px;
-    }
-    .order .order_main form .input input{
-        width: 300px;
-        height: 35px;
-        padding: 0 10px;
-        border: 2px solid #cccccc;
-        border-radius: 3px;
-        background: #eeeeee;
-        outline: none;
-    }
-    .order .order_main form .book_btn{
-        padding: 10px 0;
-        background: #fac031;
-        color: white;
-        width: 40%;
-        text-align: center;
-        margin-top: 20px;
-        text-decoration: none;
-        
-    }
-/* footer */
-footer{
-    padding: 30px 0 0 20px;
-    background: #eeeeee;
-}
-
-footer .footer_main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-footer .footer_main .footer_tag{
-    text-align: center;
-}
-
-footer .footer_main .footer_tag h2{
+    padding: 70px 5%;
+    background-color: #fdf8f2;
+  }
+  .order h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
     color: #000;
-    margin-bottom: 25px;
-    font-size: 30px;
-}
-
-footer .footer_main .footer_tag p{
+  }
+  .order h1 span {
+    color: #fac031;
+    margin-right: 10px;
+    font-family: "mv boli", cursive;
+  }
+  .order .order_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .order .order_image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  .order form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex: 1;
+  }
+  .order form .input p {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  .order form .input {
+    margin-bottom: 10px;
+  }
+  .order form .input input {
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    border-radius: 3px;
+    background: #eeeeee;
+  }
+  .order .book_btn {
+    grid-column: span 2;
+    background: #fac031;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .order .book_btn:hover {
+    background: #ffa500;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 30px 0 20px 0;
+    background: #eeeeee;
+  }
+  footer .footer_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10px;
+  }
+  footer .footer_tag {
+    text-align: center;
+    margin: 10px;
+  }
+  footer .footer_tag h2 {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  footer .footer_tag p {
     margin: 10px 0;
-}
-
-footer .footer_main .footer_tag i{
+  }
+  footer .footer_tag i {
     margin: 0 5px;
     cursor: pointer;
-}
-
-footer .footer_main .footer_tag i:hover{
+  }
+  footer .footer_tag i:hover {
     color: #fac031;
-}
-
-/* footer */
-    
-
-/*Media Queries*/
-
-@media (max-width: 786px) {
-    .header .logo{
-        font-size: 1rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .header .navbar a {
+      display: none;
     }
-    .header .navbar a 
-    { 
-    display: none; 
-    
+    .icons div {
+      display: block;
     }
-    .icons div
-    {
-        display: block;
-
+    .order form {
+      grid-template-columns: 1fr;
     }
-    footer .footer_main{
-        display: block;
+    .order .book_btn {
+      width: 100%;
     }
-
-}
+    .order h1 {
+      font-size: 2rem;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
