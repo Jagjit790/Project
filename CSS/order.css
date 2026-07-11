@@ -1,16 +1,22 @@
-*
-{
-        margin: 0;
-        padding: 0;
-        outline: none;
-        border: none;
-        text-decoration: none;
-        transition-duration: all 0.2s;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    transition: all 0.2s ease;
 }
-body {
-    
-    font-family: "Lato", sans-serif;
-    background-color: ;
+
+html{
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Lato",sans-serif;
+    overflow-x:hidden;
+    width:100%;
 }
 /*header styling start*/
 .header
@@ -75,7 +81,7 @@ body {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
@@ -115,9 +121,9 @@ body {
 /*header styling ends*/
 /* order styling */
 .order{
-    width: 100%;
-    height: 100vh;
-    padding: 70px 0;	
+    width:100%;
+    min-height:100vh;
+    padding:70px 5%;
 }
     .order h1{
         display: flex;
@@ -133,20 +139,29 @@ body {
         font-size: 55px;
     }
     .order .order_main{
-        
-        display: flex;
-        align-items: center;
-        gap: 5rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:5rem;
     }
-    .order .order_main .order_image img {
-        width: 600px;	
-        height: 600px;
+    .order .order_main .order_image{
+        flex:1;
+        display:flex;
+        justify-content:center;
+    }
+
+    .order .order_main .order_image img{
+        width:100%;
+        max-width:600px;
+        height:auto;
     }
     
-    .order .order_main form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0 10px;
+    .order .order_main form{
+        flex:1;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+        width:100%;
     }
     .order .order_main form .input p{
         line-height: 25px;	
@@ -155,26 +170,27 @@ body {
         margin: 5px;
     }
     .order .order_main form .input input{
-        width: 300px;
-        height: 35px;
-        padding: 0 10px;
-        border: 2px solid #cccccc;
-        border-radius: 3px;
-        background: #eeeeee;
-        outline: none;
+        width:100%;
+        max-width:300px;
+        height:40px;
+        padding:0 12px;
+        border:2px solid #ccc;
+        border-radius:5px;
+        background:#eee;
     }
-    .order .order_main form .book_btn{
-        padding: 10px 0;
-        background: #fac031;
-        color: white;
-        width: 40%;
-        text-align: center;
-        margin-top: 20px;
-        text-decoration: none;
-        
+   .order .order_main form .book_btn{
+        grid-column: 1 / -1;   /* Span both columns */
+        justify-self: center;  /* Center the button */
+        width:180px;
+        padding:12px;
+        background:#fac031;
+        color:#fff;
+        text-align:center;
+        margin-top:20px;
     }
 /* footer */
 footer{
+    
     padding: 30px 0 0 20px;
     background: #eeeeee;
 }
@@ -210,24 +226,230 @@ footer .footer_main .footer_tag i:hover{
 /* footer */
     
 
-/*Media Queries*/
+/* ==========================================
+   TABLET (992px)
+========================================== */
+@media (max-width:992px){
 
-@media (max-width: 786px) {
-    .header .logo{
-        font-size: 1rem;
+    .header{
+        padding:1.5rem 5%;
     }
-    .header .navbar a 
-    { 
-    display: none; 
-    
-    }
-    .icons div
-    {
-        display: block;
 
+    .order{
+        min-height:auto;
+        padding:60px 20px;
     }
+
+    .order h1{
+        font-size:48px;
+    }
+
+    .order h1 span{
+        font-size:48px;
+    }
+
+    .order .order_main{
+        gap:2rem;
+        align-items:center;
+    }
+
+    .order .order_main .order_image img{
+        width:100%;
+        max-width:400px;
+        height:auto;
+    }
+
+    .order .order_main form{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .order .order_main form .input input{
+        width:100%;
+        max-width:100%;
+    }
+
     footer .footer_main{
-        display: block;
+        grid-template-columns:repeat(3,1fr);
+        gap:30px;
+    }
+
+}
+
+
+/* ==========================================
+   Media Queries
+========================================== */
+
+
+/* ==========================================
+   MOBILE (768px)
+========================================== */
+@media (max-width:768px){
+
+    .header{
+        padding:15px;
+    }
+
+    .header .logo{
+        font-size:1.4rem;
+    }
+
+    .header .navbar{
+        display:none;
+    }
+
+    .icons div{
+        display:block;
+    }
+
+    .order{
+        min-height:auto;
+        padding:40px 15px;
+    }
+
+    .order h1{
+        font-size:35px;
+        text-align:center;
+    }
+
+    .order h1 span{
+        font-size:35px;
+    }
+
+    .order .order_main{
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+    }
+
+    .order .order_main .order_image img{
+        width:100%;
+        max-width:300px;
+        height:auto;
+    }
+
+    .order .order_main form{
+        width:100%;
+        grid-template-columns:1fr;
+        justify-items:center;
+    }
+
+    .order .order_main form .input{
+        width: 260px;
+    }
+
+    /* Labels Left */
+    .order .order_main form .input p{
+        text-align:left;
+        font-size:15px;
+        margin-bottom:6px;
+    }
+
+    /* Smaller Inputs */
+    .order .order_main form .input input{
+        width:100%;
+        max-width:260px;
+        height:38px;
+        padding:0 10px;
+        font-size:14px;
+    }
+
+    .order .order_main form .book_btn{
+        width:260px;
+        text-align:center;
+    }
+
+    footer{
+        padding:25px 15px;
+    }
+
+    footer .footer_main{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE (480px)
+========================================== */
+@media (max-width:480px){
+
+    .header{
+        padding:12px;
+    }
+
+    .header .logo{
+        font-size:1.2rem;
+    }
+
+    .order{
+        padding:30px 12px;
+    }
+    
+    .order h1{
+        font-size:28px;
+    }
+
+    .order h1 span{
+        font-size:28px;
+    }
+
+    .order .order_main{
+        gap:20px;
+    }
+
+    .order .order_main .order_image img{
+        width:100%;
+        max-width:220px;
+    }
+
+    /* Left Labels */
+    .order .order_main form .input{
+        width:220px;
+    }
+
+    .order .order_main form .input p{
+        text-align:left;
+        font-size:14px;
+    }
+
+    /* Compact Inputs */
+    .order .order_main form .input input{
+        width:100%;
+        max-width:220px;
+        height:35px;
+        font-size:13px;
+    }
+
+    .order .order_main form .book_btn{
+        width:220px;
+        padding:10px;
+    }
+
+    .overlay a{
+        font-size:26px;
+    }
+
+    .overlay .closebtn{
+        right:15px;
+        font-size:40px;
+    }
+
+    footer{
+        padding:20px 10px;
+    }
+
+    footer .footer_main{
+        grid-template-columns:1fr;
+        gap:20px;
+        text-align:center;
+    }
+
+    footer .footer_main .footer_tag h2{
+        font-size:22px;
     }
 
 }
